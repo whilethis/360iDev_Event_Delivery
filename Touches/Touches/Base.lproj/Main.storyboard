@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Touches" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="twM-1D-MWK">
+                                <rect key="frame" x="264" y="103" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="AVC-PQ-A33"/>
+                                    <constraint firstAttribute="width" secondItem="twM-1D-MWK" secondAttribute="height" multiplier="15:8" id="tOH-mF-QDU"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="mD1-Dk-n0S" kind="embed" id="EhE-Mi-ZVi"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h39-kV-fxJ">
+                                <rect key="frame" x="264" y="315" width="240" height="128"/>
+                                <connections>
+                                    <segue destination="Onf-GQ-aa5" kind="embed" id="CTm-wf-a7I"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h39-kV-fxJ" firstAttribute="top" secondItem="twM-1D-MWK" secondAttribute="bottom" constant="84" id="62k-dJ-oud"/>
+                            <constraint firstItem="h39-kV-fxJ" firstAttribute="centerX" secondItem="twM-1D-MWK" secondAttribute="centerX" id="AOQ-jq-QQ4"/>
+                            <constraint firstItem="twM-1D-MWK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EJ3-ze-isw"/>
+                            <constraint firstItem="twM-1D-MWK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="lXw-np-gu4"/>
+                            <constraint firstItem="h39-kV-fxJ" firstAttribute="height" secondItem="twM-1D-MWK" secondAttribute="height" id="poC-ei-pEE"/>
+                            <constraint firstItem="h39-kV-fxJ" firstAttribute="width" secondItem="twM-1D-MWK" secondAttribute="width" id="sSd-wD-gNG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Red View Controller-->
+        <scene sceneID="TM0-Ak-rcx">
+            <objects>
+                <viewController id="Onf-GQ-aa5" customClass="RedViewController" customModule="Touches" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7vc-CG-Wvn"/>
+                        <viewControllerLayoutGuide type="bottom" id="9cr-a4-ViP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fb8-pd-ELN">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udS-Ng-8A8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="955"/>
+        </scene>
+        <!--Blue View Controller-->
+        <scene sceneID="SzT-rz-3w1">
+            <objects>
+                <viewController id="mD1-Dk-n0S" customClass="BlueViewController" customModule="Touches" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tGA-NZ-umh"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZOk-PG-YYw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3ap-lf-WP5">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bsG-dp-9Eh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="520" y="955"/>
+        </scene>
+    </scenes>
+</document>
